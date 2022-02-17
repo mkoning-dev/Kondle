@@ -39,10 +39,10 @@ namespace mk {
 		bool m_hard_mode = false;
 
 		// Positioning constants.
-		const int m_col_start = 8;
+		static constexpr int m_col_start = 8;
 		const int m_grid_length = (m_max_guesses * 2) + 1;
-		const int m_error_line = 3;
-		const int m_grid_start = m_error_line + 2;
+		static constexpr int m_error_line = 3;
+		static constexpr int m_grid_start = m_error_line + 2;
 		const int m_grid_end = m_grid_start + m_grid_length;
 		const int m_keyboard_start = m_grid_end + 2;
 		const int m_keyboard_end = m_keyboard_start + 3;

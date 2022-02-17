@@ -154,7 +154,8 @@ int main()
 
 			std::string guess = "";
 
-			ansi::move(guess_header);
+			//ansi::move(guess_header);
+			ansi::home();
 			std::cout << "Guess " << game.get_guess_num() + 1 << "/" << game.get_max_guesses();
 			ansi::move(guess_entry);
 			std::cout << "Enter your guess here or Q to exit to main menu: ";
